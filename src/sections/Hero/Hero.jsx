@@ -37,7 +37,10 @@ function Hero() {
         </h1>
         <h2>Backend Developer</h2>
         <span>
-          <a href="https://linkedin.com/in/quang-thuan-nguyen" target="_blank">
+          <a 
+            href="https://linkedin.com/in/quang-thuan-nguyen" 
+            target="_blank"
+          >
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>
           <a
