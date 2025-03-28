@@ -55,7 +55,7 @@ function Hero() {
           dedicated to building advanced, data-centric solutions that deliver
           real-world results.
         </p>
-        <a href={CV} download>
+        <a href={CV} target="_blank">
           <button className="hover">Résumé</button>
         </a>
       </div>
