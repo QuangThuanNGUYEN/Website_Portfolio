@@ -35,7 +35,7 @@ function Hero() {
           <br />
           Nguyen
         </h1>
-        <h2>Backend Developer</h2>
+        <h2>Data Engineer</h2>
         <span>
           <a 
             href="https://linkedin.com/in/quang-thuan-nguyen" 
