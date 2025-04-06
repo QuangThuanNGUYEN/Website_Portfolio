@@ -51,9 +51,7 @@ function Hero() {
           </a>
         </span>
         <p className={styles.description}>
-          With a focus on backend development and machine learning, I am
-          dedicated to building advanced, data-centric solutions that deliver
-          real-world results.
+          I engineer the systems that move, shape, and unlock the value of data—turning backend complexity into real-world impact.
         </p>
         <a href={CV} target="_blank">
           <button className="hover">Résumé</button>
