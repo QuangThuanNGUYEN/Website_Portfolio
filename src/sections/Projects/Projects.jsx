@@ -13,6 +13,9 @@ import headwater from "../../assets/headwater.jpeg";
 import distinguish_parkinson from "../../assets/distinguish-parkinson.png";
 import predict from "../../assets/it-project-predict.jpg";
 import goods from "../../assets/goods-management.jpeg/";
+import govhack from "../../assets/govhack.png/";
+import book from "../../assets/bookwormia.png/";
+import mango from "../../assets/mango.png/";
 
 
 
@@ -21,6 +24,25 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
+                <ProjectCard
+          src={book}
+          link="https://github.com/Four-Musketeers-E-Commerce/mobile"
+          h3="Book-Selling Platform"
+          p="A full-stack book-selling app with authentication, catalog, and review system; designed UI in Figma, developed responsive frontend with React Native/Tailwind CSS, and integrated Appwrite backend for secure data management
+"
+        />
+        <ProjectCard
+          src={mango}
+          link="https://quangthuan.pythonanywhere.com/"
+          h3="Mango Surveillance Website"
+          p="A Django web application designed to help growers calculate surveillance effort for pest and disease management, tailored to factors like plant type, location, number of plants, grower preferences, and historical data."
+        />
+        <ProjectCard
+          src={govhack}
+          link="https://quangthuannguyen.github.io/govhack_chatbot/"
+          h3="GovHack Chatbot"
+          p="As Tech Lead at GovHack 2025, I built an FAQ chatbot using Dialogflow to help participants easily access rules, and event information, reduce confusion during the hackathon by providing quick, accurate answers in real time, creating a smoother experience for both newcomers and returning participants."
+        />
         <ProjectCard
           src={revenue_ad}
           link="https://github.com/QuangThuanNGUYEN/Linear_regression_revenue_advertising_prediction.git"
@@ -36,8 +58,8 @@ function Projects() {
         <ProjectCard
           src={tic_tac_toe}
           link="https://github.com/QuangThuanNGUYEN/WaterNehttps://github.com/QuangThuanNGUYEN/Tic_Tac_Toe_C.gittwork.git"
-          h3="Tic Tac Toe Game (C)"
-          p="A console-based Tic Tac Toe game with single-player and two-player modes. The single-player mode features a simple AI that randomly selects its moves."
+          h3="BookWormia"
+          p="An online marketplace for buying and selling books, built with React Native for the frontend and Appwrite as the backend. Features include user authentication, book listings, reviews, and a smooth checkout experience. Designed for scalability and a seamless user experience on mobile devices."
         />
         <ProjectCard
           src={sort}
@@ -45,31 +67,14 @@ function Projects() {
           h3="Sorting Algo Visualizer (Python)"
           p="Implementing sorting algorithms like Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, Quick Sort, and Heap Sort and visualize the sorting process in real-time, with threading ensuring a responsive interface."
         />
-        <ProjectCard
-          src={calculator}
-          link="https://github.com/QuangThuanNGUYEN/WaterNetwork.git"
-          h3="Calculator (Python)"
-          p="Using Python and Tkinter, supporting basic arithmetic and advanced functions like logarithms and square roots. Implemented input validation and dynamic display adjustments for enhanced usability.
-"
-        />
-        <ProjectCard
-          src={headwater}
-          link="https://github.com/QuangThuanNGUYEN/WaterNetwork.git"
-          h3="Headwater Network Connectivity and Analysis (Python)"
-          p="This project enhances water networks using graph algorithms to detect cycles, connect key points, and identify potential sources. It also organizes information about water sources and river names effectively."
-        />
+
         <ProjectCard
           src={distinguish_parkinson}
           link="https://github.com/QuangThuanNGUYEN/Parkinson-Disease-Diagnose-.git"
           h3="Identify Parkinson’s Disease vs Healthy Individuals (Python)"
           p="Distinguish people with Parkinson’s disease from ones that are healthy based on a dataset of Parkinson's patients and healthy people and the application of statistics."
         />
-        <ProjectCard
-          src={predict}
-          link="https://github.com/QuangThuanNGUYEN/ProjectOutcomePrediction.git"
-          h3="Predict the Outcome of an IT Project (Python)"
-          p="A machine learning program with data collected from nearly 50 IT projects helps predict the outcome of an IT project with an accuracy level of over 80%."
-        />
+        
         <ProjectCard
           src={goods}
           link="https://github.com/QuangThuanNGUYEN/WaterNetwork.git"
