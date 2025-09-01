@@ -26,8 +26,8 @@ function Projects() {
       <div className={styles.projectsContainer}>
                 <ProjectCard
           src={book}
-          link="https://github.com/Four-Musketeers-E-Commerce/mobile"
-          h3="Book-Selling Platform"
+          link="https://github.com/buudangfelix/mobile"
+          h3="BookWormia"
           p="A full-stack book-selling app with authentication, catalog, and review system; designed UI in Figma, developed responsive frontend with React Native/Tailwind CSS, and integrated Appwrite backend for secure data management
 "
         />
@@ -55,12 +55,7 @@ function Projects() {
           h3="Diagnose the Severity of Parkinson’s Disease (Python)"
           p="Analyzed extensive patient voice data to predict Parkinson’s Disease severity."
         />
-        <ProjectCard
-          src={tic_tac_toe}
-          link="https://github.com/QuangThuanNGUYEN/WaterNehttps://github.com/QuangThuanNGUYEN/Tic_Tac_Toe_C.gittwork.git"
-          h3="BookWormia"
-          p="An online marketplace for buying and selling books, built with React Native for the frontend and Appwrite as the backend. Features include user authentication, book listings, reviews, and a smooth checkout experience. Designed for scalability and a seamless user experience on mobile devices."
-        />
+
         <ProjectCard
           src={sort}
           link="https://github.com/QuangThuanNGUYEN/Sorting-Algo-Visualizer.git"
@@ -77,7 +72,7 @@ function Projects() {
         
         <ProjectCard
           src={goods}
-          link="https://github.com/QuangThuanNGUYEN/WaterNetwork.git"
+          link="https://github.com/QuangThuanNGUYEN/Goods_Management_C"
           h3="Goods Management System (C)"
           p="A console-based goods management system in C, employing pointers for dynamic memory allocation. The application manages product information utilized file I/O for data persistence, showcasing proficiency in structures, file manipulation, and memory management.
 "
