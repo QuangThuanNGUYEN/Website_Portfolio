@@ -11,7 +11,21 @@
     border-radius: 20px;
   }
 
-  h3{
+
+  h3 {
+    max-width: 28ch;
+    min-height: 3em; /* small baseline consistency */
+    margin-bottom: 4px;
+  }
+
+  p {
+    max-width: 32ch;
+    min-height: 6em; /* light alignment without hard lock */
+  }
+
+
+
+  /* h3{
     max-width: 28ch;
     height: 100px;
     margin-bottom:1px
@@ -21,7 +35,7 @@
     max-width: 30ch;
     height: 300px;
     margin-top:5px
-  }
+  } */
 
 
   a {

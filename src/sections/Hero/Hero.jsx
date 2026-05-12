@@ -35,11 +35,12 @@ function Hero() {
           <br />
           Nguyen
         </h1>
-        <h2>Data Engineer</h2>
+        <h2>Data Engineer · Darwin, Australia</h2>
         <span>
           <a 
             href="https://linkedin.com/in/quang-thuan-nguyen" 
             target="_blank"
+            rel="noreferrer noopener"
           >
             <img src={linkedinIcon} alt="Linkedin icon" />
           </a>

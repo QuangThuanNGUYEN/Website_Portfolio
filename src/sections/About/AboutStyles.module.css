@@ -11,20 +11,30 @@
   max-width: 700px;
   margin: 0 auto;
   font-size: 1rem;
-  /* color: var(--text-color); use theme variable */
 }
 
+/* Grid of cards like before */
 .grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 18px;
 }
 
+/* Cards – now with subtle movement */
 .card {
   background: var(--project-card-bg);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transform: translateY(0);
+  animation: floatCard 6s ease-in-out infinite alternate;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+/* Slight lift on hover */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
 }
 
 .image {
@@ -35,20 +45,17 @@
 
 .caption {
   padding: 12px 14px 16px;
-  /* color: var(--text-color); text inside cards changes with theme */
 }
 
 .caption h3 {
   font-size: 18px;
   margin: 0 0 6px;
-  /* color: var(--text-color); */
-  color: #222
+  color: #222;
 }
 
 .caption p {
   font-size: 14px;
-  /* color: var(--text-color); */
-  color: #222
+  color: #222;
 }
 
 @media (width >= 700px) {
@@ -60,5 +67,15 @@
 @media (width >= 1100px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Subtle idle motion so cards “move” */
+@keyframes floatCard {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-4px);
   }
 }

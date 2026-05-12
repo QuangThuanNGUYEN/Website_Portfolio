@@ -1,9 +1,6 @@
 import React from "react";
 import styles from "./ProjectsStyles.module.css";
 import ProjectCard from "../../common/ProjectCard";
-// import viberr from "../../assets/viberr.png";
-// import freshBurger from "../../assets/fresh-burger.png";
-// import hipsster from "../../assets/hipsster.png";
 import revenue_ad from "../../assets/revenue-advertising.jpeg";
 import voice_parkinson from "../../assets/voice-parkinson.png";
 import tic_tac_toe from "../../assets/tic-tac-toe.png";
@@ -12,10 +9,10 @@ import calculator from "../../assets/calculator.png";
 import headwater from "../../assets/headwater.jpeg";
 import distinguish_parkinson from "../../assets/distinguish-parkinson.png";
 import predict from "../../assets/it-project-predict.jpg";
-import goods from "../../assets/goods-management.jpeg/";
-import govhack from "../../assets/govhack.png/";
-import book from "../../assets/bookwormia.png/";
-import mango from "../../assets/mango.png/";
+import goods from "../../assets/goods-management.jpeg";
+import govhack from "../../assets/govhack.png";
+import book from "../../assets/bookwormia.png";
+import mango from "../../assets/mango.png";
 
 
 
@@ -24,13 +21,30 @@ function Projects() {
     <section id="projects" className={styles.container}>
       <h1 className="sectionTitle">Projects</h1>
       <div className={styles.projectsContainer}>
-                <ProjectCard
+        
+        
+        <ProjectCard
+          src={book}
+          link="https://quangthuannguyen.github.io/AgriNode-Pitching-Site/"
+          h3="AgriNode"
+          p="Built a low-cost ESP32 agriculture node with soil/climate sensors, on-device edge AI for plant-disease detection, cloud streaming, and smart irrigation—designed for real NT farm environments."
+        />
+{/* 
+        <ProjectCard
+          src={book}
+          link="https://github.com/buudangfelix/mobile"
+          h3="NT Tourism Review Analytics (Data Engineering | Python + BigQuery)"
+          p="Analysed 56,000+ NT tourism reviews from Google Maps and TripAdvisor using Python scraping pipelines. Built sentiment analysis, topic modelling, and an interactive dashboard to help operators understand visitor feedback and improve services."
+        />  */}
+
+        <ProjectCard
           src={book}
           link="https://github.com/buudangfelix/mobile"
           h3="BookWormia"
           p="A full-stack book-selling app with authentication, catalog, and review system; designed UI in Figma, developed responsive frontend with React Native/Tailwind CSS, and integrated Appwrite backend for secure data management
 "
         />
+
         <ProjectCard
           src={mango}
           link="https://quangthuan.pythonanywhere.com/"
@@ -41,7 +55,7 @@ function Projects() {
           src={govhack}
           link="https://quangthuannguyen.github.io/govhack_chatbot/"
           h3="GovHack Chatbot"
-          p="As Tech Lead at GovHack 2025, I built an FAQ chatbot using Dialogflow to help participants easily access rules, and event information, reduce confusion during the hackathon by providing quick, accurate answers in real time, creating a smoother experience for both newcomers and returning participants."
+          p="As Tech Lead at GovHack NT 2025, I built a Dialogflow FAQ chatbot that delivered real-time answers on rules and event info, reducing confusion and improving the participant experience."
         />
         <ProjectCard
           src={revenue_ad}
@@ -51,7 +65,7 @@ function Projects() {
         />
         <ProjectCard
           src={voice_parkinson}
-          link="https://github.com/QuangThuanNGUYEN/https://github.com/QuangThuanNGUYEN/Parkinson-Linear-Regression.git.git"
+          link="https://github.com/QuangThuanNGUYEN/Parkinson-Linear-Regression.git.git"
           h3="Diagnose the Severity of Parkinson’s Disease (Python)"
           p="Analyzed extensive patient voice data to predict Parkinson’s Disease severity."
         />
